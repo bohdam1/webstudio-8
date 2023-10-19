@@ -1,0 +1,37 @@
+
+
+
+
+.icon-menu{
+    position:absolute;
+    top: 0.8rem;
+    right: 0.937rem;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    &__burger{
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        @media screen and (min-width: 768px){
+            display: none;
+        }
+        &:hover,
+        &:focus{
+            fill: var(--color-accent);
+        }
+    }
+    // &.is-open .icon-menu__menu{
+    //     display: none;  
+    //   }
+    // &__cros{
+    //     display:none;
+    // }
+    // &.is-open .icon-menu__cros{
+    //   display: block; 
+    //   z-index: 1;
+    // }
+    
+}

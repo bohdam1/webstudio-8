@@ -1,0 +1,39 @@
+.team {
+    background-color:var(--color-background-third);
+    &__container{
+        padding-bottom: 94px;
+        padding-top: 94px;
+        @media screen and (min-width: 480px){
+            padding-bottom: 60px;
+            padding-top: 60px;
+         }
+        @media screen and (min-width: 1200px){
+            padding-bottom: 94px;
+            padding-top: 94px;
+         }
+    }
+    &__list{
+        display: block;
+        
+        @media screen and (min-width: 769px){
+            margin-left: 90px;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            margin: 0;
+            &:nth-child(n + 2){
+             margin-bottom: 0;
+            }
+            &:nth-child(odd){
+                margin-right: 0;
+            }
+            &:nth-child(2){
+             margin-right: 0;
+            }
+         }
+         @media screen and (min-width: 1200px){
+            flex-wrap: nowrap;
+         }
+       
+    }
+}

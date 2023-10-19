@@ -1,0 +1,30 @@
+
+.footer{
+    background-color: var(--background-color-second);
+    &__container{
+        widows: 100%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: 1200px){
+            display: flex;
+        }
+    }
+    &__contacts{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+          display: block;
+        }
+
+    }
+    &__flex{
+        @media screen and (min-width: 769px){
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

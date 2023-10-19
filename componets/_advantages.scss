@@ -1,0 +1,15 @@
+.advantages{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+      opacity: 0; /* Текст стає невидимим */
+    visibility: hidden; /* Текст залишається невидимим і не займає місце */
+  
+  }
+  &__list{
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+      
+}

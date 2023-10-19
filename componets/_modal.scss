@@ -1,0 +1,55 @@
+.modal{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+    width: 528px;
+    min-height: 581px;
+    flex-shrink: 0;
+
+
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    &__title{
+        color: var(--text-color-primary);
+        text-align: center;
+        font-family: var(--font-family-primary);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+    
+        margin: 40px 40px 0px;
+    }
+    &__button-close{
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background-color: #FFFFFF;
+        border-color:  rgba(0, 0, 0, 0.10);;
+    
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border-color: rgba(0, 0, 0, 0.10);
+        padding: 6px;
+    
+    }
+   
+    &__icone-close{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .modal__button-close:hover & {
+            fill: var(--color-background-accent); /* Change to the desired accent color */
+        }
+    }
+}

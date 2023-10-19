@@ -1,0 +1,95 @@
+  
+
+/* футерформа */
+.form-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 769px){
+        margin-top: 60px;
+       
+    }
+    @media screen and (min-width: 1200px){
+        display: block;
+        margin-top: 12px;
+       margin-left: 70px;
+    }
+    
+    
+    &__conteiner{
+        
+        @media screen and (min-width: 1200px){
+            
+            display: flex;
+            justify-content: center; /* Вирівнювання горизонталі */
+            align-items: center; 
+        }
+         
+        @media screen and (min-width: 1200px){
+            
+        }
+    }
+    
+    &__title{
+        color: var(--color-other);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    
+    }
+    
+    
+    &__input{
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 50px;
+        @media screen and (min-width: 480px){
+            width: 450px;
+           height: 50px;
+        }
+        @media screen and (min-width: 1200px){
+            margin: 0;
+            width: 358px;
+            margin-right: 12px;
+        }
+      
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
+        color: rgba(255, 255, 255, 0.60);
+        font-family: var(--font-family-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.48px;
+    }
+    &__buton{
+        display: flex;
+        justify-content: center; /* Вирівнювання горизонталі */
+        align-items: center; 
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+        
+    }
+    &__icone{
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+ 
+}
+    
+    

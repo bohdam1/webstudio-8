@@ -1,0 +1,13 @@
+.main__title{
+    display: block;
+    margin-bottom: 30px;
+
+    color: var(--text-color-primary);
+    text-align: center;
+    font-size: 36px;
+    @media screen and (min-width: 1200px){
+      
+        margin-bottom: 50px;
+       }
+       
+}

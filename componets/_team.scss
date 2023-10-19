@@ -1,0 +1,12 @@
+.team {
+    background-color:var(--color-background-third);
+    &__container{
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    &__list{
+        display: flex;
+        justify-content:space-between;
+       
+    }
+}

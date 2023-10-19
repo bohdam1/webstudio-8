@@ -1,0 +1,61 @@
+
+
+/* чек-бокс */
+
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   &__input{
+        opacity: 0;
+        position: relative;
+        width: 16px;
+        height: 15px;
+        &:checked + .checkbox__end {
+            opacity: 1;
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &:checked ~ .checkbox__start {
+            opacity: 0;
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+   &__icon{
+        position: relative;
+        margin-right: 8px;
+        width: 16px;
+        height: 15px;
+        flex-shrink: 0;
+       
+    }
+    &__start{
+        pointer-events: none;
+        top:0;
+        left:0;
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+    }
+    &__end {
+        pointer-events: none;
+        fill: var(--color-background-accent); /* Змініть на відповідний колір */
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 15px;
+        position: absolute;
+        
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
+
+
+
+
+

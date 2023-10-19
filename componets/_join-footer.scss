@@ -1,0 +1,57 @@
+
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 70px;
+    margin-top: 12px;
+    &__title{
+        color: var(--color-other);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+    }
+    &__sociallink{
+        display: flex;
+    }
+    &__social-link-footer{
+    
+        display: flex; /* Встановлюємо контейнеру властивість "display" на "flex" */
+        justify-content: center; /* Вирівнювання елементів по горизонталі по центру */
+        align-items: center; 
+        
+    
+        width: 44px;
+        height: 44px;
+        
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0.10);;
+        
+        transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-right: 10px;
+        &:hover,
+        &:focus{
+            background-color: var(--color-accent);
+            
+        }
+    }
+    &__icone{
+   
+        width: 20px;
+        height: 20px;;
+        fill: var(--color-other);
+    }
+}
+
+
+
+
+
+
+
+

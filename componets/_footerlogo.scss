@@ -1,0 +1,20 @@
+.logo{
+    
+    display: block;
+    
+    
+     
+    
+    font-family: var(--font-family-second);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;  
+    
+    &__first--half {
+        color: var( --color-accent);
+    }
+    &__footer-secondary--half {
+        color: var(--color-other);
+    }
+}
+
