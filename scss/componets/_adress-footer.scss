@@ -3,12 +3,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-style: normal;
     @media screen and (min-width: 1200px){
         
         display: block;
     }
 
    &__footer{
+        font-style: normal;
      margin-top: 20px;
      color: var(--color-other);
      font-size: 14px;
@@ -17,7 +19,7 @@
      letter-spacing: 0.42px;
     }
     &__items{
-
+        font-style: normal;
         padding-top: 8px;
         padding-bottom: 8px;
         color: var(--color-alfa);

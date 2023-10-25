@@ -4,7 +4,7 @@
     @media screen and (min-width: 768px){
        
         display:flex ;
-     margin-left: 88px ;
+    //  margin-left: 88px ;
    
 
      color: var(  --text-color-primary);
@@ -12,12 +12,14 @@
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
+     margin-left: 90px;
 
     }
     @media screen and (min-width: 1200px){
     margin-left: 90px;
     }
     &__list{
+
         display:flex ;
         justify-content: start;
     }
@@ -33,7 +35,7 @@
          content: "";
          position: absolute;
          left: 0;
-         bottom: -14px;
+         bottom: -24px;
         
          width: 100%;
          height: 4px;
